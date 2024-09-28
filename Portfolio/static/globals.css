@@ -60,7 +60,7 @@ body{
 
 span{
     
-    background: linear-gradient(45deg, rgb(237, 137, 197), rgb(245, 49, 81)); 
+    background: linear-gradient(45deg,  rgb(237, 156, 205), rgb(249, 40, 75)); 
     background-clip: text;
     color: transparent;
 }  
@@ -82,14 +82,16 @@ span{
 .gradient-btn{
     font-size: 1.8rem;
     padding: 1rem 2rem;
-    border-radius: 3rem;
-    background: linear-gradient(45deg, rgb(237, 137, 197), rgb(245, 49, 81));
+    border-radius: 2rem;
+    background: linear-gradient(45deg, rgb(237, 156, 205), rgb(249, 40, 75));
     letter-spacing: 1px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
     color: white;
     border: none;
     text-wrap: nowrap;
-    
+}
 
+.gradient-btn:hover{
+    transform: scale(1.10);
 }
