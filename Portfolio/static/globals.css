@@ -1,25 +1,36 @@
 *{
+    
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     text-decoration: none;
     scroll-behavior: smooth;
-    font-family:poppins;
+
 }
 
+/* Bij https://www.w3schools.com/ heb ik gezien dat de :root makkelijk alle styles in mijn html document aan te passen*/
 :root{
-    --bg-color: #060003;
-    --second-bg-color:#101010  ;
+
+    /* Ik wilde gemakkelijk deze kleuren terug
+     kunnen brengen en heb bij https://developer.mozilla.org/ goed kunnen vinden hoe dat moest met variabelen*/
+
+    --bg-color: #1d1c1c;
     --text-color:white;
     --main-color: pink;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
 
 }
 
+
 html{
-     font-size: 60%;
+    font-size: 50%; 
     overflow-x: hidden;   
 }
 
+
+
+/*hier komen de kleuren mooi terug*/
 body{
     background: var(--bg-color);
     color: var(--text-color);
@@ -39,6 +50,9 @@ body{
     align-items: center;
     z-index: 1000;
 }
+
+
+
 #menu-icon{
     font-size: 3.5rem;
     color: var(--main-color);
@@ -50,7 +64,7 @@ body{
     color: var(--text-color);
     font-weight: 800;
     cursor: pointer;
-    transition: 0.3 ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .logo:hover{
@@ -128,24 +142,24 @@ section{
 }
 
 .home-content p{
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 2.5rem;
+    font-weight: 200;
     line-height: 1.8;
 }
 
 
 .home-img img{
-    width: 32vw;
-    border-radius: 50%;
-    box-shadow: 0 0 25px var(--main-color);
-    transition: 0.4 ease-in-out;
+    width: 26vw;
+    border-radius: 60%;
+    box-shadow: 0 0 30px var(--main-color);
+    transition: 0.4s ease-in-out;
 
 } 
 
 .home-img img:hover{
     box-shadow: 0 0 25px var(--main-color),
-                0 0 50px var(--main-color),
-                0 0 100px var(--main-color);
+                0 0 30px var(--main-color),
+                0 0 80px var(--main-color);
                  
 
 }
@@ -197,7 +211,27 @@ section{
 
 }
 
+.about{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 10rem;
+    background: var(--bg-color);
 
+}
+
+.about-img img{
+    width: 32vw;
+    border: 50%;
+    box-shadow: 0 0 25px var(--main-color);
+    transition: 0.4s ease-in-out;
+
+}
+
+.about-img img:hover{
+    box-shadow: 0 0 25px;
+    
+}
 
 
 
